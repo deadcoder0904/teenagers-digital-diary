@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: url(teen.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Verdana';
+	letter-spacing: -0.1em;
+	font-size: 5em;
+	color: #FAD111;
+	font-weight: bolder;
+	text-shadow: 0.1em 0.1em 0.2em #123456;
+}
+
+.notebook {
+    background: rgba(58, 52, 50, 0.52);
+    color: white;
+    margin: 1.5em auto;
+    max-width: 52em;
+    padding: 3.3em;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+    background-image: linear-gradient(90deg, #b6d7e8, 2px, transparent, 2px, transparent), linear-gradient(0, #d9eaf3, 1px, transparent, 2px, transparent);
+    background-position: 4rem 0, 0 5px;
+    background-size: 100% 3rem;
+    padding-left: 4rem;
+    margin-bottom: -6em;
+    z-index: 4;
+    position: relative;
+}
+
+li {
+    font-size: 2rem;
+    padding-left: 1rem;
+    text-align: left;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}

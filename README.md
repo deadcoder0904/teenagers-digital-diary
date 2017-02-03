@@ -4,7 +4,7 @@
 
 # Screenshot
 
-![teenagers-digital-diary](.png)
+![teenagers-digital-diary](http://imgur.com/201Go1J.png)
 
 ## License
 
