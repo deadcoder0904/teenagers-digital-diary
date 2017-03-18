@@ -4,7 +4,17 @@
 
 # Screenshot
 
-![teenagers-digital-diary](http://imgur.com/201Go1J.png)
+## 1. Diary
+
+![diary](http://imgur.com/klZOLiO.png)
+
+## 2. View Solution
+
+![view](http://imgur.com/YfSe6Qb.png)
+
+## 3. Edit Solution
+
+![edit](http://imgur.com/kzjmq7z.png)
 
 ## License
 

@@ -24,7 +24,7 @@ h1 {
     background: rgba(58, 52, 50, 0.52);
     color: white;
     margin: 1.5em auto;
-    max-width: 52em;
+    max-width: 70em;
     padding: 3.3em;
     box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
     background-image: linear-gradient(90deg, #b6d7e8, 2px, transparent, 2px, transparent), linear-gradient(0, #d9eaf3, 1px, transparent, 2px, transparent);
@@ -42,4 +42,8 @@ li {
     text-align: left;
     line-height: 3rem;
     margin-bottom: 3rem;
+}
+
+#buttons {
+	padding: 1em;
 }
