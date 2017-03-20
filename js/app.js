@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded',function() {
 	function setDiaryProblems(Problems) {
 		localStorage.setItem('Problems', JSON.stringify(Problems));
@@ -71,8 +72,12 @@ document.addEventListener('DOMContentLoaded',function() {
 	}
 
 	renderProblems();
+	var view = Array.prototype.slice.call(diary.querySelectorAll('.view'), 0);
+	var edit = Array.prototype.slice.call(diary.querySelectorAll('.edit'), 0);
+	var deleteSelector = Array.prototype.slice.call(diary.querySelectorAll('.delete'), 0);
+	var problem = Array.prototype.slice.call(diary.querySelectorAll('.problem'), 0);
 
-	diary.querySelectorAll('.view').forEach(function (viewBtn) {
+	view.forEach(function (viewBtn) {
 		viewBtn.addEventListener('click', function() {
 			var parent = this.parentElement;
 			var index = Problems.indexOf(parent.parentNode.firstChild.innerText);
@@ -83,7 +88,7 @@ document.addEventListener('DOMContentLoaded',function() {
 		});
 	});
 
-	diary.querySelectorAll('.edit').forEach(function (editBtn) {
+	edit.forEach(function (editBtn) {
 		editBtn.addEventListener('click', function() {
 			var parent = this.parentElement;
 			var index = Problems.indexOf(parent.parentNode.firstChild.innerText);
@@ -107,7 +112,7 @@ document.addEventListener('DOMContentLoaded',function() {
 		});
 	});
 
-	diary.querySelectorAll('.delete').forEach(function (deleteBtn) {
+	deleteSelector.forEach(function (deleteBtn) {
 		deleteBtn.addEventListener('click', function() {
 			var parent = this.parentElement;
 			var li = parent.parentNode.parentNode;
@@ -120,7 +125,7 @@ document.addEventListener('DOMContentLoaded',function() {
 		});
 	});
 
-	diary.querySelectorAll('.problem').forEach(function (problem) {
+	problem.forEach(function (problem) {
 		problem.addEventListener('input', function() {
 			if(this.innerText.trim() == '')
 				Problems.splice(+this.parentElement.firstChild.id,1);
